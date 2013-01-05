@@ -1,0 +1,17 @@
+<launch>
+  <!-- use simulator time always -->
+  <param name="use_sim_time" value="true" />
+
+  <!-- start stage simulator -->
+  <node name="stageros" pkg="stage" type="stageros" args="$(env HOME)/world/gates-turtlebot.world">
+      <!-- remap scans  -->
+      <remap from="base_scan" to="scan"/>
+  </node>
+
+  <!-- publish a fixed link to /laser -->
+  <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 /base_laser_link /laser 100">
+      <!-- use simulator time always -->
+      <param name="use_sim_time" value="true" />
+  </node>
+
+</launch>
