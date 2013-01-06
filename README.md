@@ -21,7 +21,7 @@ Usage in Stage (standalone)
 
 Stage 3.X.X should be installed.
 
-To tun the simulations;
+To run the simulations;
 
 cd into the _turtlebot_stage_simulator_ folder and _stage gates-turtlebot.world_ 
 
