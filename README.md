@@ -5,7 +5,7 @@ A minimal simulator for the turtlebot
 
 Fork in
 -------
-Forked in from http://pr.willowgarage.com/wiki/CS225B/Simulator  
+Forked in from Willow Garage/Standford University course CS225B 
 
 Usage in ROS Electric
 ---------------------
